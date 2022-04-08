@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:elevation="9dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/bolas"
+        app:civ_border_color="@color/design_default_color_primary"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha um número entre 0 e 100"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnSortear"
+        android:onClick="sortearNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Sortear"/>
+
+    <TextView
+        android:id="@+id/textoSorteio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum número selecionado"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+</LinearLayout>
